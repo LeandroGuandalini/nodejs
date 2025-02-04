@@ -12,6 +12,9 @@ class Customer extends Model {
     }
   );
   }
+  static associate (models) {
+    this.hasMany(models.Contact);
+  }
 }
 
 export default Customer;
